@@ -1,1 +1,81 @@
-/*# sourceMappingURL=css.css.map */
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4 {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(4, 360px);
+  gap: 0;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.logo img {
+  width: 360px;
+}
+
+@media screen and (max-width: 1439px) {
+  .logo {
+    grid-template-columns: repeat(3, 360px);
+  }
+  .logo img {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .logo {
+    grid-template-columns: repeat(3, 240px);
+  }
+  .logo img {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 721px) {
+  .logo {
+    grid-template-columns: repeat(2, 188px);
+  }
+  .logo img {
+    width: 188px;
+  }
+  .logo .logo-img-8 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .logo .logo-img-7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .logo .logo-img-9 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .logo .logo-img-12 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .logo .logo-img-11 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .logo .logo-img-10 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    grid-template-columns: repeat(2, 120px);
+  }
+  .logo img {
+    width: 120px;
+  }
+}/*# sourceMappingURL=css.css.map */
