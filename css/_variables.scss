@@ -1,0 +1,95 @@
+@mixin font($size, $height, $weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+$white: #ffffff;
+$pink_gradient: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+$light-gray: #B3B3BA;;
+$blue: #24A3FF;
+$white: #ffffff;
+$crimson: #F0145A;
+$backgraund_gray: #F5F5FA;
+$dirty-lilac: #686887;
+$dark-blue: #323264;
+$black: #000000;
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 500px) {
+    .container{
+        padding: 0 20px;
+    }
+}
+
+
+.text-42{
+    @include font(42px, 1.2, 600);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+@media screen and (max-width: 500px) {
+    .text-42{
+        @include font(32px, 1.2, 600);
+    }
+}
+
+.text-14{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include font(14px, 1.1, 600);
+}
+
+.text-16{
+    @include font(16px, 1.1, 400);
+}
+
+.text-18{
+    @include font(18px, 1.4, 400);
+}
+@media screen and (max-width: 500px) {
+    .text-18{
+        @include font(16px, 1.3, 400);
+    }
+}
+
+.text-24{
+    @include font(24px, 1.2, 600);
+}
+@media screen and (max-width: 500px) {
+    .text-24{
+        @include font(18px, 1.2, 600);
+    }
+}
+
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin: 0 0px 1px 5px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-blue{
+    border: solid $blue;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2.5px;
+    margin: 0 0px 1px 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
