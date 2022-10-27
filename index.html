@@ -14,47 +14,7 @@
 </head>
 <body>
 
-      <nav class="navbar navbar-expand-sm bg-light shadow-sm px-lg-3 px-sm-1">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center navbar_logo" href="#"><img class="me-2" src="./img/calendar-1-48.png" alt="" width="48">Calendar</a>
-          <!-- <a class="navbar-brand d-flex align-items-center navbar_logo"><img class="me-2" src="./img/calendar-2-64.png" alt="" width="48">Calendar</a> -->
-          <!-- <a class="navbar-brand d-flex align-items-center navbar_logo"><img class="me-2" src="./img/calendar-3-48.png" alt="" width="48">Calendar</a> -->
-           <!-- <a class="navbar-brand d-flex align-items-center navbar_logo"><img class="me-2" src="./img/calendar-4-50.png" alt="" width="48">Calendar</a> -->
-         
-            <!-- <form class="d-flex flex-row-reverse align-items-center">
-                <a class="btn flex bg-primary ms-2 text-white border border-primary px-4 btn_started" href="#">Get Started</a>
-                <a class="text-decoration-none px-3 mx-lg-3 mx-sm-0 text-dark hover_primary" href="#">Sign In</a>
-                <a class="text-decoration-none px-2 text-dark hover_primary" href="#">Contact Sales</a>
-            </form> -->
-
-            <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggler="collapse" 
-            data-bs-target="#navbarNav" 
-            aria-controls="navbarNav" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link " href="#">Contact Sales</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Sign In</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Get Started</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
-
-
-
-      <nav class="navbar navbar-expand-md bg-light fixed-top">
+      <nav class="navbar navbar-expand-md bg-light fixed-top shadow-sm">
         <div class="container-fluid">
           <a class="navbar-brand d-flex align-items-center navbar_logo" href="#"><img class="me-2" src="./img/calendar-1-48.png" alt="" width="48">Calendar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -64,8 +24,6 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title mt-2" id="offcanvasNavbarLabel">Menu</h5>
-              <!-- <a class="offcanvas-title btn flex bg-primary m-1 text-white border border-primary px-5 btn_started" id="offcanvasNavbarLabel" href="#">Get Started</a> -->
-              <!-- <a class="navbar-brand d-flex align-items-center navbar_logo" href="#"><img class="me-2" src="./img/calendar-1-48.png" alt="" width="48">Calendar</a> -->
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
@@ -79,7 +37,7 @@
                   <a class="nav-link me-4 active text-decoration-none text-dark hover_primary" aria-current="page" href="#">Sign In</a>
                 </li>
                 <li class="nav-item">
-                    <a class="offcanvas-title my-2 btn flex bg-primary text-white border border-primary px-5 btn_started" id="offcanvasNavbarLabel" href="#">Get Started</a>
+                    <a class="offcanvas-title my-2 btn btn-primary flex  text-white  px-5 btn_started" id="offcanvasNavbarLabel" href="#">Get Started</a>
                   </li>
               </ul>
            
@@ -87,6 +45,278 @@
           </div>
         </div>
       </nav>
+
+
+      <!-- <section class="container shadow-sm border rounded calendar_img"> 
+        <div class="row justify-content-between">
+            <div class="col-4 rounded-start calendar_img_left">
+                <h3>Team Meeting</h3>
+                <h4>Who needs to be invited?</h4>
+                <p>Add guest to see when they are available.</p>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Add People  " aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">+</button>
+                </form>
+            </div>
+            <div class="col-8">
+                <div class="row text-center flex-nowrap justify-content-center">
+                    <div class="col px-1"></div>
+                    <div class="col px-1">13 MN</div>
+                    <div class="col px-1">14 TU</div>
+                    <div class="col px-1">15 WD</div>
+                    <div class="col px-1">16 TH</div>
+                    <div class="col px-1">17 FR</div>
+                </div>
+                <div class="row text-center flex-nowrap justify-content-center height_20">
+                    <div class="col px-1"></div>
+                    <div class="col px-1 border"></div>
+                    <div class="col px-1 border"></div>
+                    <div class="col px-1 border"></div>
+                    <div class="col px-1 border"></div>
+                    <div class="col px-1 border"></div>
+                </div>
+            </div>
+        </div>
+  
+      </section> -->
+
+
+
+      
+      <section class="container shadow-sm border rounded ps-0 mb-3 calendar_img"> 
+        
+            <div class="p-3 calendar_img_left">
+                <h3>Team Meeting</h3>
+                <h4>Who needs to be invited?</h4>
+                <p>Add guest to see when they are available.</p>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Add People  " aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">+</button>
+                </form>
+
+
+                <div class="card mt-3 bg-transparent border border-0 card_hover">
+                    <div class="row g-0 align-items-center justify-content-between">
+                      <div class="col-xxl-1 col-lg-2 col-md-2 col-sm-1 col-2 my-1 ms-2">
+                        <img src="./img/Photo-You.png" class="rounded-circle  img_foto" alt="Photo-You">
+                      </div>
+                      <div class="col-lg-8 col-md-7 col-sm-8 col-8">
+                        <div class="card-body p-1">
+                          <p class="card-text text_name">You</p>
+                          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                      </div>
+					  <button class="col-1 bg-transparent border border-0 text-secondary card_cross"></button>
+                    </div>
+                </div>
+
+				<div class="card bg-transparent border border-0 card_hover">
+                    <div class="row g-0 align-items-center justify-content-between">
+                      <div class="col-xxl-1 col-lg-2 col-md-2 col-sm-1 col-2 my-1 ms-2">
+                        <img src="./img/Photo-1.png" class="rounded-circle  img_foto" alt="Photo-1">
+                      </div>
+                      <div class="col-lg-8 col-md-7 col-sm-8 col-8">
+                        <div class="card-body p-1">
+                          <p class="card-text m-0 text_name">Oksana Kobzar</p>
+                          <p class="card-text"><small class="text-muted text-email">KOBZAR.COM</small></p>
+                        </div>
+                      </div>
+					  <button class="col-1 bg-transparent border border-0 text-secondary card_cross">×</button>
+                    </div>
+                </div>
+
+				<div class="card bg-transparent border border-0 card_hover">
+                    <div class="row g-0 align-items-center justify-content-between">
+                      <div class="col-xxl-1 col-lg-2 col-md-2 col-sm-1 col-2 my-1 ms-2">
+                        <img src="./img/Photo-3.png" class="rounded-circle  img_foto" alt="Photo-3">
+                      </div>
+                      <div class="col-lg-8 col-md-7 col-sm-8 col-8">
+                        <div class="card-body p-1">
+                          <p class="card-text m-0 text_name">Denis Mayboroda</p>
+                          <p class="card-text"><small class="text-muted text-email">Mayboroda.COM</small></p>
+                        </div>
+                      </div>
+					  <button class="col-1 bg-transparent border border-0 text-secondary card_cross">×</button>
+                    </div>
+                </div>
+
+				<div class="card bg-transparent border border-0 card_hover">
+                    <div class="row g-0 align-items-center justify-content-between">
+                      <div class="col-xxl-1 col-lg-2 col-md-2 col-sm-1 col-2 my-1 ms-2">
+                        <img src="./img/Photo-4.png" class="rounded-circle  img_foto" alt="Photo-4">
+                      </div>
+                      <div class="col-lg-8 col-md-7 col-sm-8 col-8">
+                        <div class="card-body p-1">
+                          <p class="card-text m-0 text_name">Vladislav Gudimenko</p>
+                          <p class="card-text"><small class="text-muted text-email">Gudimenko.COM</small></p>
+                        </div>
+                      </div>
+					  <button class="col-1 bg-transparent border border-0 text-secondary card_cross">×</button>
+                    </div>
+                </div>
+
+				<div class="card bg-transparent border border-0 card_hover">
+                    <div class="row g-0 align-items-center justify-content-between">
+                      <div class="col-xxl-1 col-lg-2 col-md-2 col-sm-1 col-2 my-1 ms-2">
+                        <img src="./img/avatar.png" class="rounded-circle img_foto" alt="avatar">
+                      </div>
+                      <div class="col-lg-8 col-md-7 col-sm-8 col-8">
+                        <div class="card-body p-1">
+                          <p class="card-text m-0 text_name">Vladislav Gudimenko</p>
+                          <p class="card-text"><small class="text-muted text-email">Gudimenko.COM</small></p>
+                        </div>
+                      </div>
+					  <button class="col-1 bg-transparent border border-0 text-secondary card_cross">×</button>
+                    </div>
+                </div>
+
+                <div class="d-grid col-12 mx-auto mt-5 ">
+                    <button class="btn btn-primary continue_btn" type="button">CONTINUE TO EVENT DETAILS</button>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="p-3 pb-0 upper_side">
+                    <div class="dropdown">
+                        <button class="bg-white border border-0 btn btn-secondary dropdown-toggle text-dark text_dropdown_1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        March 13-17
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="upper_side_inner">
+                        <div class=" dropdown">
+                            <button class="bg-white text-dark border border-secondary btn btn-secondary dropdown-toggle me-lg-4 me-md-2 me-sm-0 my-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            45 minutes
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="rounded-4 p-1 bg-white text-dark border border-secondary my-1 btn_arrow"> TODAY </button>
+                    </div>
+
+                </div>
+
+               
+
+                <div class="p-3 text-center calendar_img_right">
+
+                        <div class=" px-1"></div>
+                        <div class="text_day px-1">13 MN</div>
+                        <div class="today text-success text-primary text_day px-1">14 TU</div>
+                        <div class="text_day px-1">15 WD</div>
+                        <div class="text_day px-1">16 TH</div>
+                        <div class="text_day px-1">17 FR</div>
+                    
+                    
+                        <div class="time px-1">8 AM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_gray"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+                    
+
+                        <div class="time px-1">9 AM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_gray"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+
+                        <div class="time px-1">10 AM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border d-flex justify-content-center box_time_main">
+							<div class="bg-success rounded-1 align-self-end d-flex align-items-center box_time">
+								
+								<!-- <button type="button" class="btn btn-success p-0 m-0">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+									<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>	
+								</button> -->
+								<!-- <img src="./img/check-mark-2.png" style="width: 10px;" alt=""> -->
+								<p class="px-1 m-0 text-white">9:15 AM - 10:00 AM</p>
+							</div>
+						</div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+
+                        <div class="time px-1">11 AM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+
+                        <div class="time px-1">12 AM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-0 border d-flex  bg_gray">
+							<div class="bg-white align-self-end d-flex align-items-center border-top border-danger  d-flex align-items-start justify-content-center red_band ">
+								<!-- <div class="p0-1 m-0 bg-white border-top border-danger"></div> -->
+								<span class="text-danger">11:28 AM</span>
+							</div>
+						</div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+                        <div class="time px-1">1 PM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+                        <div class="time px-1">2 PM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+                        <div class="time px-1">3 PM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+                        <div class="time px-1">4 PM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+                        <div class="time px-1">5 PM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+
+                        <div class="time px-1">6 PM</div>
+                        <div class="px-1 border bg_gray"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border"></div>
+                        <div class=" px-1 border bg_stripes"></div>
+                </div>
+            </div>
+  
+      </section>
 
     </body>
 </html>

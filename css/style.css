@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/* .body{
+    background-image: url(../img/img-1.jpg);
+} */
 
 .btn_started{
     font-weight: 500;
@@ -16,6 +19,7 @@
 }
 .hover_primary:hover{
     color: #0d6efd !important;
+    /* color: hsl(216deg 90% 45%) !important; */
 }
 
 .navbar_logo{
@@ -23,6 +27,225 @@
     font-size: 21px;
 }
 
-@media screen and (max-width: 670px){
+.calendar_img{
+    margin-top: 150px;
+    height: 680px;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+.calendar_img_left{
+    background-color: hsl(0deg 0% 97%);
+}
+.bg_gray{
+    background-color: hsl(0deg 0% 97%);
+    background-color: hsl(0deg 14% 98%);
+}
+.bg_stripes{
+    background: #e8e6e3 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABlBMVEUAAADu7u6BVFV4AAAAAXRSTlMAQObYZgAAAD1JREFUaN7t0TEBAAAMgzDm3/Rs9MiBAVJ1mioPmIgJEzFhIiZMxERMmIgJEzFhIiZiwkRMmIgJEzERk8ke1xwJxQlKQNMAAAAASUVORK5CYII=);
+    background: #f7f3ed url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABlBMVEUAAADu7u6BVFV4AAAAAXRSTlMAQObYZgAAAD1JREFUaN7t0TEBAAAMgzDm3/Rs9MiBAVJ1mioPmIgJEzFhIiZMxERMmIgJEzFhIiZiwkRMmIgJEzERk8ke1xwJxQlKQNMAAAAASUVORK5CYII=);
+    background: hsl(0deg 0% 97%) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABlBMVEUAAADu7u6BVFV4AAAAAXRSTlMAQObYZgAAAD1JREFUaN7t0TEBAAAMgzDm3/Rs9MiBAVJ1mioPmIgJEzFhIiZMxERMmIgJEzFhIiZiwkRMmIgJEzERk8ke1xwJxQlKQNMAAAAASUVORK5CYII=);
+    background: hsl(0deg 5% 96%) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABlBMVEUAAADu7u6BVFV4AAAAAXRSTlMAQObYZgAAAD1JREFUaN7t0TEBAAAMgzDm3/Rs9MiBAVJ1mioPmIgJEzFhIiZMxERMmIgJEzFhIiZiwkRMmIgJEzERk8ke1xwJxQlKQNMAAAAASUVORK5CYII=);
+}
 
+
+.continue_btn{
+    margin-top: 110px;
+}
+@media screen and (max-width: 1200px){
+    .continue_btn{
+        margin-top: 55px;
+    }
+}
+@media screen and (max-width: 992px){
+    .continue_btn{
+        margin-top: -32px;
+    }
+}
+
+
+.calendar_img_right{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px;
+
+}
+
+/* @media screen and (max-width: 768px) {
+    .calendar_img{
+        margin-top: 150px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        grid-template-columns: minmax(0, 240px) minmax(0, 480);
+    }
+    .upper_side{
+        display: flex;
+        margin: 0 0 0 40px;
+        justify-content: space-between;
+    }
+    .calendar_img_right{
+        height: 600px;
+        display: grid;
+        grid-template-columns: minmax(0, 20px) minmax(0, 20) minmax(0, 20px) minmax(0, 20) minmax(0, 20px) minmax(0, 20);
+        grid-template-rows: 30px;
+    }  
+} */
+
+
+
+.height_20{
+    height: 40px;
+}
+
+.upper_side{
+    display: flex;
+    margin: 0 0 0 60px;
+    justify-content: space-between;
+}
+.upper_side_inner{
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    align-self: flex-end;
+    font-size: 13px;
+    /* font-weight: 500; */
+}
+.today{
+    /* color: hsl(216deg 90% 45%) !important; */
+    font-weight: 500;
+}
+
+.text_dropdown_1{
+    font-size: 23px;
+    font-weight: 500;
+}
+@media screen and (max-width: 992px){
+    .upper_side{
+        margin: 0 0 0 0px;
+    }
+}
+@media screen and (max-width: 768px){
+    .upper_side{
+        display: flex;
+        /* margin: 0 0 0 40px; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .upper_side_inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .calendar_img_right{
+        /* height: 600px;
+        display: grid;
+        grid-template-columns: 60px 1fr 1fr 1fr 1fr 1fr; */
+        grid-template-rows: 20px;
+    }
+    .calendar_img{
+        margin-top: 150px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .text_day{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .time{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .calendar_img_right{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.btn_arrow::before {
+    width: 14px;
+    height: 14px;
+    content: "";
+    background: url(../img/arrow-65-left.png);
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin: 0 5px 2px 0;
+  }
+  .btn_arrow::after {
+    width: 14px;
+    height: 14px;
+    content: "";
+    background: url(../img/arrow-65-right.png);
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin: 0 0px 2px 5px;
+  }
+
+  .img_foto{
+    width: 44px;
+    height: 45px;
+  }
+  .card_cross{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .card_cross:hover{
+    color: rgb(192, 5, 5) !important;
+  }
+  .card_hover:hover{
+    background-color: hsl(210deg 12% 93%) !important;
+  }
+  .text_name{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .text-email{
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+
+.box_time_main{
+/* height: 25px; */
+}
+  .box_time{
+    height: 80%;
+}
+
+.box_time p{
+    font-size: 14px;
+}
+@media screen and (max-width: 1400px){
+    .box_time p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .box_time p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 404px){
+    .box_time p{
+        font-size: 8px;
+    }
+}
+
+.red_band{
+    height: 49%;
+    width: 100%; 
+    border-top: 1px dashed red !important;
+}
+.red_band span{
+    font-size: 10px;
+    margin-top: -9px;
+    font-weight: 600;
 }
