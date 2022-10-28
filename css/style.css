@@ -15,6 +15,7 @@ body{
 .margin_center{
     margin: 0 auto;
 }
+
 /* .background_flower{
     margin-top: -100px;
     z-index: 10;
@@ -61,7 +62,10 @@ body{
     display: grid;
     grid-template-columns: 4fr 8fr;
 }
-.calendar_img_left{
+/* .calendar_img_left{
+    background-color: hsl(0deg 0% 97%);
+} */
+.bg_1{
     background-color: hsl(0deg 0% 97%);
 }
 .bg_gray{
@@ -270,5 +274,37 @@ body{
     }
     .text_dropdown_1{
         border: 1px solid gray !important;
+    }
+}
+
+
+
+/* .section_3 .btn{
+    margin-top: 60px;
+} */
+.padding-bottom{
+
+}
+
+
+@media screen and (max-width: 992px){
+    .section_3_inner{
+        justify-content: center !important;
+    }
+    .section_3_left{
+        justify-content: center !important;
+    }
+    .section_3_left h3{
+        text-align: center;
+    }
+    .section_3_left p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .card-body p{
+        font-size: 12px;
+        font-weight: 500;
     }
 }
