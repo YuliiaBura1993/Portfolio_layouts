@@ -16,25 +16,6 @@ body{
     margin: 0 auto;
 }
 
-/* .background_flower{
-    margin-top: -100px;
-    z-index: 10;
-}
-.background_flower img{
-    max-width: 250px;
-    z-index: 10;
-} */
-/* .section_2{
-    background-image: url(../img/flower-3.png) !important;
-    background-repeat: no-repeat;
-    background-size: 17%;
-    background-position: bottom;
-    background-position: right;
-}
-.section_2 p{
-    font-weight: 500;
-} */
-
 
 .btn_started{
     font-weight: 500;
@@ -62,9 +43,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 8fr;
 }
-/* .calendar_img_left{
-    background-color: hsl(0deg 0% 97%);
-} */
+
 .bg_1{
     background-color: hsl(0deg 0% 97%);
 }
@@ -184,7 +163,7 @@ body{
     vertical-align: middle;
     margin: 0 5px 2px 0;
   }
-  .btn_arrow::after {
+.btn_arrow::after {
     width: 14px;
     height: 14px;
     content: "";
@@ -193,22 +172,22 @@ body{
     background-size: 100%;
     vertical-align: middle;
     margin: 0 0px 2px 5px;
-  }
+}
 
-  .img_foto{
+.img_foto{
     width: 44px;
     height: 45px;
-  }
-  .card_cross{
+}
+.card_cross{
     font-size: 17px;
     font-weight: 600;
-  }
-  .card_cross:hover{
+}
+.card_cross:hover{
     color: rgb(192, 5, 5) !important;
-  }
-  .card_hover:hover{
+}
+.card_hover:hover{
     background-color: hsl(210deg 12% 93%) !important;
-  }
+}
   .text_name{
     font-size: 16px;
     font-weight: 500;
@@ -220,7 +199,7 @@ body{
   }
 
 
-  .box_time{
+.box_time{
     height: 80%;
 }
 
@@ -282,9 +261,7 @@ body{
 /* .section_3 .btn{
     margin-top: 60px;
 } */
-.padding-bottom{
 
-}
 
 
 @media screen and (max-width: 992px){
@@ -300,6 +277,10 @@ body{
     .section_3_left p{
         text-align: center;
     }
+    .section_4_inner{
+        display: flex;
+        flex-direction: column-reverse;
+    } 
 }
 
 @media screen and (max-width: 380px){
@@ -308,3 +289,29 @@ body{
         font-weight: 500;
     }
 }
+
+
+
+/* .footer_icons img{
+    width: 35px;
+} */
+
+.footer_icons a:hover{
+    color: #0d6efd !important;
+    color: gray !important;
+}
+footer .card a:hover{
+    color: #0d6efd !important;
+}
+
+@media screen and (max-width: 576px){
+    footer h3{
+        font-size: 16px;
+    }
+    footer .card a{
+        font-size: 14px;
+    }
+}
+
+
+
