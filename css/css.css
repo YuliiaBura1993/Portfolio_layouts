@@ -41,6 +41,12 @@
   font-weight: 400;
 }
 
+.text-16-700 {
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
 .text-18 {
   font-size: 18px;
   line-height: 1.4;
@@ -93,9 +99,16 @@
 *, html, body {
   margin: 0;
   padding: 0;
+  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-family: "TT Norms";
+}
+
+.about_us {
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  height: 700px;
 }
 
 .team {
@@ -486,4 +499,268 @@ input[name=r] {
   .logo img {
     width: 120px;
   }
+}
+header {
+  padding: 51px 60px 45px 60px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.main_header {
+  background: transparent;
+}
+
+.main-logo {
+  width: 155px;
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+}
+
+.menu-item-link {
+  display: block;
+  padding: 0px 0 0px 15px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.menu-item-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ee2c69;
+  text-decoration-style: double;
+}
+
+.wrap-btn {
+  height: 100%;
+  min-height: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn {
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.menu-btn::before, .menu-btn::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.menu-btn::before {
+  top: 17px;
+}
+
+.menu-btn::after {
+  bottom: 16px;
+}
+
+@media screen and (max-width: 840px) {
+  header {
+    padding: 60px 60px;
+  }
+  .wrap-btn {
+    display: flex;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu .active {
+    display: block;
+    position: fixed;
+    background: #323264;
+    top: 110px;
+    left: 0px;
+    width: 195px;
+    height: 250px;
+  }
+  .main-logo {
+    width: 125px;
+    height: 50px;
+  }
+  .menu-item-link {
+    padding: 20px 0 0px 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    padding: 50px 20px 20px 20px;
+  }
+  .main-logo {
+    width: 100px;
+    height: 40px;
+  }
+  .menu-item-link {
+    padding: 15px 0 0px 15px;
+    font-size: 16px;
+  }
+  .menu .active {
+    top: 90px;
+    left: 5px;
+  }
+  .menu-btn::before {
+    top: 11px;
+  }
+  .menu-btn::after {
+    bottom: 10px;
+  }
+}
+.lang_btn {
+  position: absolute;
+  right: 510px;
+  top: 37px;
+  display: flex;
+}
+.lang_btn a {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+.lang_btn a:hover {
+  background: #ee2c69;
+  border-radius: 8px;
+}
+
+.lang_btn-active {
+  background: #F0145A;
+  border-radius: 8px;
+}
+
+.top_inf {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 60px;
+  top: 35px;
+}
+.top_inf a {
+  cursor: pointer;
+}
+
+.header_adress {
+  color: #ffffff;
+  padding: 0 0 0 20px;
+}
+
+.header_tel {
+  color: #ffffff;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 840px) {
+  .lang_btn {
+    left: 58px;
+    top: 24px;
+  }
+  .top_inf {
+    right: 57px;
+    top: 24px;
+  }
+  .header_tel {
+    color: #B3B3BA;
+  }
+  .header_adress {
+    display: none;
+  }
+  .dot {
+    display: none;
+  }
+  .header_fb {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lang_btn {
+    left: 18px;
+    top: 15px;
+  }
+  .top_inf {
+    right: 19px;
+    top: 15px;
+  }
+}
+header.inverted {
+  background-color: #323264;
+}
+header.inverted a {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("../font/TTNorms-Bold.eot");
+  src: url("../font/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../font/TTNorms-Bold.woff2") format("woff2"), url("../font/TTNorms-Bold.woff") format("woff"), url("../font/TTNorms-Bold.ttf") format("truetype"), url("../font/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../font/TTNorms-Medium.eot");
+  src: url("../font/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../font/TTNorms-Medium.woff2") format("woff2"), url("../font/TTNorms-Medium.woff") format("woff"), url("../font/TTNorms-Medium.ttf") format("truetype"), url("../font/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../font/TTNorms-Light.eot");
+  src: url("../font/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("../font/TTNorms-Light.woff2") format("woff2"), url("../font/TTNorms-Light.woff") format("woff"), url("../font/TTNorms-Light.ttf") format("truetype"), url("../font/TTNorms-Light.svg#TTNorms-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../font/TTNorms-ExtraLight.eot");
+  src: url("../font/TTNorms-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../font/TTNorms-ExtraLight.woff2") format("woff2"), url("../font/TTNorms-ExtraLight.woff") format("woff"), url("../font/TTNorms-ExtraLight.ttf") format("truetype"), url("../font/TTNorms-ExtraLight.svg#TTNorms-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../font/TTNorms-Regular.eot");
+  src: url("../font/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../font/TTNorms-Regular.woff2") format("woff2"), url("../font/TTNorms-Regular.woff") format("woff"), url("../font/TTNorms-Regular.ttf") format("truetype"), url("../font/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../font/TTNorms-ExtraBold.eot");
+  src: url("../font/TTNorms-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/TTNorms-ExtraBold.woff2") format("woff2"), url("../font/TTNorms-ExtraBold.woff") format("woff"), url("../font/TTNorms-ExtraBold.ttf") format("truetype"), url("../font/TTNorms-ExtraBold.svg#TTNorms-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }/*# sourceMappingURL=css.css.map */

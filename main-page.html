@@ -7,6 +7,70 @@
     <title>Hlegals</title>
 </head>
 <body>
+    <header class="main_header">
+        <a href="#"><img class="main-logo" src="./img/header/main-logo.png" alt="main-logo"></a>
+        <nav class="menu">
+            <ul class="block">
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#">о нас</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#">послуги</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#">команда</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#">публікації</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#how-it-works">контакти</a>
+                </li>
+            </ul>
+            <div class="wrap-btn">
+                <a class="menu-btn" href="#"></a>
+            </div>
+        </nav>
+        <div class="lang_btn">
+            <a class="lang_btn-active" href="#">УК</a>
+            <a href="#">РУ</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="top_inf">
+            <p class="header_adress text-16">Одеса, Адміральський пр., 3</p>
+            <div class="dot"></div>
+            <p class="header_tel text-16-700">+38 (050) 390 15 91</p>
+            <div class="dot"></div>
+            <a class="header_fb" href="#"><img src="./img/header/fb.png" alt="fb"></a>
+        </div>
+    </header>
+   
+    <script>
+           var className = "inverted";
+            var scrollTrigger = 60;
+
+            window.onscroll = function() {
+            // We add pageYOffset for compatibility with IE.
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByTagName("header")[0].classList.add(className);
+            } else {
+                document.getElementsByTagName("header")[0].classList.remove(className);
+            }
+            };
+    </script>
+
+    <script>
+        let btn = document.querySelector('.wrap-btn');
+        btn.addEventListener('click', ()=>{
+            let block = document.querySelector('.block');
+            if (block.classList.contains('active')) {
+                block.classList.remove('active')
+            } else {
+                block.classList.add('active')
+            }
+            
+        })
+    </script>
 
     <!-- <div class="w3-content w3-display-container" style="max-width:900px">
         <img class="mySlides" src="./img/main-page/foto-1.png" style="width:50%">
@@ -21,9 +85,9 @@
       </div>
        -->
 
+    <section class="about_us jumbotron"></section>
 
-
-    <section class="services">
+    <section id="how-it-works" class="services">
         <div class="container">
             <a class="text-14" href="#">послуги<i class="arrow right"></i></a>
             <h4 class="text-42">Що ми вміємо робити краще за інших?</h4>

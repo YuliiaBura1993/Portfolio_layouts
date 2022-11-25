@@ -14,6 +14,7 @@ $backgraund_gray: #F5F5FA;
 $dirty-lilac: #686887;
 $dark-blue: #323264;
 $black: #000000;
+$color-blue: #0e436b;
 
 
 .container{
@@ -50,6 +51,9 @@ $black: #000000;
 
 .text-16{
     @include font(16px, 1.1, 400);
+}
+.text-16-700{
+    @include font(16px, 1.1, 700);
 }
 
 .text-18{
