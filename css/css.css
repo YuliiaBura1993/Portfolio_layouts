@@ -500,7 +500,7 @@ input[name=r] {
     width: 120px;
   }
 }
-header {
+.main_header {
   padding: 51px 60px 45px 60px;
   position: fixed;
   width: 100%;
@@ -575,7 +575,7 @@ header {
 }
 
 @media screen and (max-width: 840px) {
-  header {
+  .main_header {
     padding: 60px 60px;
   }
   .wrap-btn {
@@ -602,7 +602,7 @@ header {
   }
 }
 @media screen and (max-width: 500px) {
-  header {
+  .main_header {
     padding: 50px 20px 20px 20px;
   }
   .main-logo {
@@ -716,6 +716,159 @@ header.inverted a {
   color: #ffffff;
 }
 
+.div_1 {
+  height: 700px;
+  background-color: rgb(253, 247, 237);
+}
+
+.div_2 {
+  height: 700px;
+  background-color: rgb(182, 240, 220);
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+.header-2 {
+  background-color: blue;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-2 li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header-2 li a:hover,
+.header-2 .menu-btn-2:hover {
+  background-color: #f4f4f4;
+}
+
+.header-2 .logo-2 {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.header-2 li {
+  float: left;
+}
+
+.header-2 li a {
+  padding: 20px 30px;
+}
+
+.header-2 .menu-2 {
+  clear: none;
+  float: right;
+  max-height: none;
+}
+
+.header-2 .menu-icon {
+  display: none;
+}
+
+.header-2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header-2 .menu-btn-2 {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header-2 {
+    display: block;
+  }
+  .header-2 .logo-2 img {
+    width: 120px;
+  }
+  /* menu */
+  .header-2 .menu-2 {
+    display: grid;
+    float: left;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+  }
+  .header-2 li a {
+    display: block;
+    /* padding: 20px 20px; */
+    border-right: none;
+    /* text-decoration: none; */
+    width: 100%;
+  }
+  /* menu icon */
+  .header-2 .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 35px 20px;
+    position: relative;
+    user-select: none;
+  }
+  .header-2 .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: #333 0.2s ease-out;
+    width: 18px;
+  }
+  .header-2 .menu-icon .navicon:before,
+.header-2 .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .header-2 .menu-icon .navicon:before {
+    top: 5px;
+  }
+  .header-2 .menu-icon .navicon:after {
+    top: -5px;
+  }
+  /* menu btn */
+  .header-2 .menu-btn-2 {
+    display: none;
+  }
+  .header-2 .menu-btn-2:checked ~ .menu-2 {
+    max-height: 240px;
+  }
+  .header-2 .menu-btn-2:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .header-2 .menu-btn-2:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .header-2 .menu-btn-2:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .header-2 .menu-btn-2:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-2 .menu-btn-2:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
 @font-face {
   font-family: "TT Norms";
   src: url("../font/TTNorms-Bold.eot");
