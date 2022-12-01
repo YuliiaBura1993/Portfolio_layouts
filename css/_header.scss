@@ -221,7 +221,8 @@ header {
 
 
 
- // HEADER 2
+
+// HEADER 2
 
 .div_1{
     height: 700px;
@@ -245,7 +246,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 3;
-    // text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -262,7 +262,8 @@ header {
   
   .header-2 li a:hover,
   .header-2 .menu-btn-2:hover {
-    background-color: #f4f4f4;
+    text-decoration: underline;
+    text-decoration-color: $weight;
   }
   
   .header-2 .logo-2 {
