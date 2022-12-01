@@ -96,6 +96,10 @@
   -webkit-transform: rotate(-45deg);
 }
 
+.underscore {
+  text-decoration: underline;
+}
+
 *, html, body {
   margin: 0;
   padding: 0;
@@ -727,12 +731,12 @@ header.inverted a {
 }
 
 a {
-  color: #000;
+  color: #ffffff;
 }
 
 /* header */
 .header-2 {
-  background-color: blue;
+  background-color: transparent;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -745,7 +749,6 @@ a {
 .header-2 li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 
@@ -785,7 +788,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .header-2 .menu-btn-2 {
