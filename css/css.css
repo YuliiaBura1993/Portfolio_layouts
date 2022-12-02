@@ -915,6 +915,12 @@ a {
   color: #B3B3BA;
 }
 
+@media screen and (max-width: 1095px) {
+  .logo-3 {
+    width: 260px;
+    margin-top: 20px;
+  }
+}
 @font-face {
   font-family: "TT Norms";
   src: url("../font/TTNorms-Bold.eot");

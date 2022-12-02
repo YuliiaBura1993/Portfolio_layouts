@@ -439,8 +439,9 @@ header {
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1095px){
     .logo-3{
-        
+        width: 260px;
+        margin-top: 20px;
     }
 }
