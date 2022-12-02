@@ -3,12 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/css.css" class="rel">
-    <title>Header Hlegas</title>
+    <title>Servises</title>
 </head>
 <body>
-    <header class="header-2">
+    <!-- <header class="header-2">
         <a href="./main-page.html" class="logo-2"><img src="./img/header/main-logo.png" alt="main-logo"></a>
         <input class="menu-btn-2" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -26,6 +25,148 @@
       <main>
         <div class="div_1"></div>
         <div class="div_2"></div>
-      </main>
+      </main> -->
+
+      <header class="main_header">
+        <a href="./main-page.html"><img class="main-logo" src="./img/header/main-logo.png" alt="main-logo"></a>
+        <nav class="menu">
+            <ul class="block">
+                <li class="menu-item">
+                    <a class="menu-item-link" href="./page-3_about-us.html">о нас</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="./page-2_servises.html">послуги</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#">команда</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#">публікації</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item-link" href="#how-it-works">контакти</a>
+                </li>
+            </ul>
+            <div class="wrap-btn">
+                <a class="menu-btn" ></a>
+            </div>
+        </nav>
+        <div class="lang_btn">
+            <a class="lang_btn-active" href="#">УК</a>
+            <a href="#">РУ</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="top_inf">
+            <p class="header_adress text-16">Одеса, Адміральський пр., 3</p>
+            <div class="dot"></div>
+            <p class="header_tel text-16-700">+38 (050) 390 15 91</p>
+            <div class="dot"></div>
+            <a class="header_fb" href="#"><img src="./img/header/fb.png" alt="fb"></a>
+        </div>
+    </header>
+   
+    <script>
+           var className = "inverted";
+            var scrollTrigger = 60;
+
+            window.onscroll = function() {
+            // We add pageYOffset for compatibility with IE.
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByTagName("header")[0].classList.add(className);
+            } else {
+                document.getElementsByTagName("header")[0].classList.remove(className);
+            }
+            };
+    </script>
+
+    <script>
+        let btn = document.querySelector('.wrap-btn');
+        btn.addEventListener('click', ()=>{
+            let block = document.querySelector('.block');
+            if (block.classList.contains('active')) {
+                block.classList.remove('active')
+            } else {
+                block.classList.add('active')
+            }
+            
+        })
+    </script>
+
+
+
+<!-- <section class="about_us jumbotron"></section> -->
+
+  <section id="how-it-works" class="services services-2">
+      <div class="container">
+          <a class="text-14" href="#">послуги<i class="arrow right"></i></a>
+          <h4 class="text-42">Що ми вміємо робити краще за інших?</h4>
+          <div class="cards_services">
+              <div class="card card-1">
+                  <img src="./img/main-page/Group-1.png" alt="Group-1">
+                  <p class="text-24">IT та електронна комерція</p>
+                  <p class="text-18">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </p>
+              </div>
+              <div class="card card-2">
+                  <img src="./img/main-page/Group-2.png" alt="Group-2">
+                  <p class="text-24">Комплексний щоденний юридичний супровід</p>
+                  <p class="text-18">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
+              </div>
+              <div class="card card-3">
+                  <img src="./img/main-page/Group-3.png" alt="Group-3">
+                  <p class="text-24">Структуризація корпоративних відносин</p>
+                  <p class="text-18">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. </p>
+              </div>
+              <div class="card card-4">
+                  <img src="./img/main-page/Group-5.png" alt="Group-5">
+                  <p class="text-24">Побудовa договірних відносин</p>
+                  <p class="text-18">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.</p>
+              </div>
+              <div class="card card-5">
+                  <img src="./img/main-page/Group-4.png" alt="Group-4">
+                  <p class="text-24">Захист бізнесу, інтелектуальної власності</p>
+                  <p class="text-18">А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.</p>
+              </div>
+              <div class="card card-6">
+                  <img src="./img/main-page/Group-6.png" alt="Group-6">
+                  <p class="text-24">Судове представництво</p>
+                  <p class="text-18">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
+              </div>
+          </div>
+      </div> 
+  </section>
+
+  <section class="successful_cases">
+    <div class="top">
+        <div class="case case-1">
+            <h5 class="text-14">Успішні кейси</h5>
+            <p class="text-24">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+            <p class="text-18">Hillel IT School</p>
+        </div>
+        <div class="case case-2">
+            <p class="text-24">Підготовка комплексного юридичного висновку для європейського банку</p>
+            <p class="text-18">WannaBiz</p>
+        </div>
+        <div class="case case-3">
+            <p class="text-24">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+            <p class="text-18">tapgerine</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="case case-4">
+            <p class="text-24">Представництво інтересів великого зернотрейдера в податковому спорі</p>
+            <p class="text-18">3D LOOK</p>
+        </div>
+        <div class="case case-5">
+            <p class="text-24">Оскарження податкових повідомлень-рішень ДФС</p>
+            <p class="text-18">adtelligent</p>
+        </div>
+        <div class="case case-6">
+            <p class="text-24">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+            <p class="text-18">Clikky</p>
+        </div>
+    </div>
+  </section>
+
+
 </body>
 </html>

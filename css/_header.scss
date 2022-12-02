@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
     ul{
         display: flex;
     }
@@ -235,13 +236,13 @@ header {
 
   
   a {
-    color: $white;
+    color: $blue;
   }
   
   /* header */
   
   .header-2 {
-    background-color: transparent;
+    background-color: $white;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
@@ -249,42 +250,45 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 51px 60px 45px 60px;
   }
-  .header-2 li a {
-    display: block;
-    padding: 20px 20px;
-    // text-decoration: none;
-  }
-  .header-2 li a .underscore{
+
+  .header-2 li .underscore{
     text-decoration: underline;
-    text-decoration-color: $weight;
+    text-decoration-color: $crimson;
+    color: $crimson;
 }
   
   .header-2 li a:hover,
   .header-2 .menu-btn-2:hover {
     text-decoration: underline;
-    text-decoration-color: $weight;
+    text-decoration-color: #ee2c69;
+    text-decoration-style: double;
   }
   
   .header-2 .logo-2 {
     display: block;
     float: left;
     font-size: 2em;
-    padding: 10px 10px;
+    // padding: 10px 10px;
     text-decoration: none;
+    width: 365px;
   } 
 
   .header-2 li {
     float: left;
   }
   .header-2 li a {
-    padding: 20px 30px;
+    display: block;
+    padding: 20px 0 0px 15px;
+    font-size: 20px;
   }
   .header-2 .menu-2 {
     clear: none;
     float: right;
     max-height: none;
     // padding: 10px 10px;
+    margin-top: 10px;
   
   }
   .header-2 .menu-icon {
